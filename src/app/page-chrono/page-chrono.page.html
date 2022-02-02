@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>page-chrono</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Chrono</p><br>
+  <p>{{timer}}</p><br>
+  <ion-button *ngIf="!change" (click)="start_stop()">Start</ion-button><br>
+  <ion-button *ngIf="change" (click)="start_stop()">Stop</ion-button><br>
+  <ion-button (click)="reset()">Reset</ion-button><br>
+  <ion-button (click)="getlap()">Lap</ion-button><br>
+</ion-content>
